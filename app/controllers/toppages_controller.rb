@@ -1,6 +1,6 @@
 class ToppagesController < ApplicationController
   def index
-    base_url = 'https://tech-kids-api.herokuapp.com'
+    base_url = 'https://webapp-step3-area-api.herokuapp.com/'
     connection = Faraday.new(url: base_url) do |builder|
       builder.request  :url_encoded
       builder.response :logger
